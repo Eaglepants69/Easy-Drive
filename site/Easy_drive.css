@@ -1,0 +1,137 @@
+body{
+	font-family: Verdana;
+}
+.button{
+	background-color: #f7f7f7;
+	width: 20px;
+	height: 10px;
+	border: 1px solid black;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 15px 28px;
+	border-radius: 6px;
+	transition-duration: 0.5s;
+	color: black;
+}
+.button:hover{
+	background-color: #3983f9;
+}
+.button:active{
+	background-color: #1350b2;
+}
+.ulboven {
+    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 39px;
+    color: black;
+}
+li {
+	display: inline;
+	font-family: Verdana;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	
+
+}
+.div_top{
+	height: 200px;
+	float: left;
+	display: flex;
+	flex-direction: row;
+
+}
+	.div_nav_bar{
+		position: relative;
+		right: 100px;
+		top: 25px;
+	}
+.table_main{
+	width: 1300px;
+	height: 400px;
+	margin-left: 220px;
+	position: absolute;
+	bottom: 350px;
+}
+.td_medewerkers{
+	position: absolute;
+	bottom: 350px;
+	left: 500px;
+	font-size: 30px;
+}
+.medewerker_foto1{
+	position: relative;
+	top: 70px;
+	left: 25px;
+}
+.medewerker_foto2{
+	position: relative;
+	top: 70px;
+	left: 25px;
+}
+.medewerker_foto3{
+	position: relative;
+	top: 70px;
+	left: 25px;
+}
+.medewerker_foto4{
+	position: relative;
+	top: 70px;
+	left: 25px;
+}
+.medewerker_foto5{
+	position: relative;
+	top: 70px;
+	left: 25px;
+}
+.table_main2{
+	width: 1300px;
+	height: 400px;
+	margin-left: 220px;
+	position: absolute;
+	top: 600px;
+}
+.td_voertuigen{
+	position: absolute;
+	left: 500px;
+	font-size: 30px;
+	top: 10px;
+}
+.voertuigen_foto1{
+	position: relative;
+	top: 55px;
+	left: 40px;
+}
+.voertuigen_foto2{
+	position: relative;
+	top: 55px;
+	left: 65px;
+}
+.voertuigen_foto3{
+	position: relative;
+	top: 55px;
+	left: 90px;
+}
+.voertuigen_foto4{
+	position: relative;
+	top: 55px;
+	left: 105px;
+}
+#facebook_insta{
+	position: relative;
+	top: 250px;
+	right: 200px;
+	text-decoration: underline;
+	color: red;
+}
+#ges_table{
+	border: 2px solid black;
+	position: relative;
+	left: 475px;
+	font-size: 20px;
+	width: 900px;
+}
+

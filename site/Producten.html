@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Easy_drive_Product.css">
+    <meta name="author" content="Ali Kurnaz">
+   <title>Producten</title>
+   <style>
+
+
+   </style> 
+</head>
+<body>
+  <header>
+    <div class="div_top">
+    <a href="index.html"><img id="foto" src="IMG/Easy_Drive_logo.png" alt="logo" width="200" height="200">
+    <h1>Easy Drive</h1>
+    <!--start nav bar-->
+    <div class="div_nav_bar">
+    <ul class="ulboven">
+    <li><a href="index.html" class="button" class="button:hover" class="button:active">Home</a></li>
+    <li><a href="producten.html" class="button" class="button:hover" class="button:active">Producten</a></li>
+    <li><a href="geschiedenis.html" class="button" class="button:hover" class="button:active">Geschiedenis</a></li>
+    <li><a href="Vacatures.html" class="button" class="button:hover" class="button:active">Vacatures</a></li>
+    <li><a href="contact.html" class="button" class="button:hover" class="button:active">Contact</a></li>
+    <li><a href="inlog.html" class="button" class="button:hover" class="button:active">Inlog</a></li>
+    </ul>
+    </div>
+    </div>
+    <!--end nav bar-->
+    </header>
+    <main>
+      <!--Start producten-->
+      <div class="container">
+        <!--Basispakketten-->
+        <div class="basisPakketten">
+          <h1>Basispakketten</h1>
+          <div class="containerBsisPktn">
+          <div>
+            <p><b>Auto rijbewijs</b></p>
+            <p>Haal jou rijbewijs voor een goedkopere prijs!</p>
+            <p>20 lessen Inc examen</p>
+            <p>Prijs: €850,- </p>
+            <button onclick="toonPrijsAuto()">Kies</button>
+          </div>
+          <div>
+          <p><b>Motor rijbewijs</b></p>
+          <p>Haal jou rijbewijs voor een goedkopere prijs!</p>
+          <p>10 lessen Inc examen</p>
+          <p>Prijs: €800,- </p>
+          <button onclick="toonPrijsMotor()">Kies</button>
+        </div>
+          <div>
+            <p><b>Vrachtwagen rijbewijs</b></p>
+            <p>Haal jou rijbewijs voor een goedkopere prijs!</p>
+            <p>10 lessen Inc examen</p>
+            <p>Prijs: 1200,- </p>
+            <button onclick="toonPrijsVrachtwagen()">Kies</button>
+          </div>
+        </div>
+        </div>
+        <!--Samenstellen-->
+        <div class="samenStellen">
+          <h1>Samenstellen</h1>
+          <div class="containerSamenStellen">
+            <div id="kortingen"> 
+              <li>
+                <ul>Vrachtwagen lessen kortingen</ul>
+                <ul>Los les = €45,-</ul>
+                <ul>Theorie = €30,-</ul>
+                <ul>Examen = €250,-</ul>
+                <ul>Examen + Theorie = €265,-</ul>
+                <ul>10 lessen = 5% korting</ul>
+                <ul>20 leesen = 9% korting</ul>
+                <ul>30 lessen = 15% korting</ul>
+              </li>
+              <li>
+                  <ul>Motor lessen kortingen</ul>
+                  <ul>Los les = €50,-</ul>
+                  <ul>Theorie = €30,-</ul>
+                  <ul>Examen = €250,-</ul>
+                  <ul>Examen + Theorie = €265,-</ul>
+                  <ul>10 lessen = 5% korting</ul>
+                  <ul>20 leesen = 9% korting</ul>
+                  <ul>30 lessen = 15% korting</ul>
+                </li>
+                <li>
+                    <ul>Auto lessen kortingen</ul>
+                    <ul>Los les = €30,-</ul>
+                    <ul>Theorie = €30,-</ul>
+                    <ul>Examen = €250,-</ul>
+                    <ul>Examen + Theorie = €265,-</ul>
+                    <ul>10 lessen = 5% korting</ul>
+                    <ul>20 leesen = 9% korting</ul>
+                    <ul>30 lessen = 15% korting</ul>
+                  </li>
+            </div>
+            <div>
+                Voertuig: <br>
+              <select id="voertuig">
+                <option value="Kies">--Kies--</option>
+                <option value="1">Auto</option>
+                <option value="2">Motor</option>
+                <option value="3">Vrachtwagen</option>
+              </select>
+            </div>
+            <div>
+                Lessen:<br>
+                <select id="lessen">
+                    <option value="Kies">--Kies--</option>
+                    <option value="5">5 lessen</option>
+                    <option value="10">10 lessen </option>
+                    <option value="15">15 lessen</option>
+                    <option value="20">20 Lessen</option>
+                    <option value="25">25 lessen</option>
+                    <option value="30">30 lessen</option>
+                  </select>
+            </div>
+            <div>
+                Bestuur Systeem: <br>
+              <select>
+                <option>--Kies--</option>
+                <option>Koppeling</option>
+                <option>Automaat</option>
+              </select>
+            </div>
+            <div>
+              Inc. Theorie?<br>
+              <select id="theorie">
+                <option>--Kies--</option>
+                <option value="1">Ja</option>
+                <option value="2">Nee</option>
+              </select>
+            </div>
+            <div>
+                Inc. Examen?<br>
+              <select id="examen">
+                <option>--Kies--</option>
+                <option value="1">Ja</option>
+                <option value="2">Nee</option>
+              </select>
+              <br>
+              <br>
+              <button onclick="bereken()">Bereken!</button>
+            </div>
+            <div id="totaal">Totaal: €0,-</div>
+            <button id="bestelBtn" onclick="bestel()">Bestel</button>
+          </div>
+        </div>
+      </div>
+      <!--End producten-->
+    </main>
+    <script>
+      //Basispakket Auto
+      function toonPrijsAuto() {
+        document.getElementById("totaal").innerHTML = "Totaal: €850,-"
+      }
+      //Basispakket Motor
+      function toonPrijsMotor() {
+        document.getElementById("totaal").innerHTML = "Totaal: €800,-"
+      }
+      //Basispakket vrachtwagen
+      function toonPrijsVrachtwagen() {
+        document.getElementById("totaal").innerHTML = "Totaal: €1200,-"
+      }
+      //Samenstellen
+      function bereken() {
+        var voertuig = document.getElementById("voertuig").value;
+        var lessen = document.getElementById("lessen").value;
+        var theorie = document.getElementById("theorie").value;
+        var examen = document.getElementById("examen").value;
+
+        //Auto samenstellen
+
+        if (voertuig == 1) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 5) {
+              var prijsLessen = 150;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 10) {
+              var prijsLessen = 300;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 15) {
+              var prijsLessen = 450;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 20) {
+              var prijsLessen = 600;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 1) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 25) {
+              var prijsLessen = 750;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 1) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 30) {
+              var prijsLessen = 900;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 5) {
+              var prijsLessen = 150;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 10) {
+              var prijsLessen = 300;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 15) {
+              var prijsLessen = 450;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 20) {
+              var prijsLessen = 600;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 25) {
+              var prijsLessen = 750;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 1) {
+          if (theorie == 1) { 
+            var prijsTheorie = 30;
+            if (lessen == 30) {
+              var prijsLessen = 900;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 5) {
+                var prijsLessen = 150;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 10) {
+                var prijsLessen = 300;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 15) {
+                var prijsLessen = 450;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 20) {
+                var prijsLessen = 600;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 25) {
+                var prijsLessen = 750;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 1) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 30) {
+                var prijsLessen = 900;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        //Motor Samenstellen
+
+        if (voertuig == 2) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 5) {
+              var prijsLessen = 250;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 10) {
+              var prijsLessen = 500;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 15) {
+              var prijsLessen = 750;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 20) {
+              var prijsLessen = 1000;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 2) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 25) {
+              var prijsLessen = 1250;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 2) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 30) {
+              var prijsLessen = 1500;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 5) {
+              var prijsLessen = 250;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 10) {
+              var prijsLessen = 500;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 15) {
+              var prijsLessen = 750;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 20) {
+              var prijsLessen = 1000;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 25) {
+              var prijsLessen = 1250;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 2) {
+          if (theorie == 1) { 
+            var prijsTheorie = 30;
+            if (lessen == 30) {
+              var prijsLessen = 1500;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 5) {
+                var prijsLessen = 250;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 10) {
+                var prijsLessen = 500;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 15) {
+                var prijsLessen = 750;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 20) {
+                var prijsLessen = 1000;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 25) {
+                var prijsLessen = 1250;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 2) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 30) {
+                var prijsLessen = 1500;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        //Vrachtwagen samenstellen
+
+        if (voertuig == 3) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 5) {
+              var prijsLessen = 225;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 10) {
+              var prijsLessen = 450;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 15) {
+              var prijsLessen = 675;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 20) {
+              var prijsLessen = 900;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 3) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 25) {
+              var prijsLessen = 1125;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 3) {
+          if (examen == 1) {
+            var prijsExamen = 250;
+            if (lessen == 30) {
+              var prijsLessen = 1350;
+              var totaal = prijsExamen + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 5) {
+              var prijsLessen = 225;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 10) {
+              var prijsLessen = 450;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 15) {
+              var prijsLessen = 700;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 20) {
+              var prijsLessen = 900;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (lessen == 25) {
+              var prijsLessen = 1125;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+        if (voertuig == 3) {
+          if (theorie == 1) { 
+            var prijsTheorie = 30;
+            if (lessen == 30) {
+              var prijsLessen = 1350;
+              var totaal = prijsTheorie + prijsLessen;
+              document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 5) {
+                var prijsLessen = 225;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 10) {
+                var prijsLessen = 450;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 15) {
+                var prijsLessen = 700;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 20) {
+                var prijsLessen = 900;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 25) {
+                var prijsLessen = 1125;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+        if (voertuig == 3) {
+          if (theorie == 1) {
+            var prijsTheorie = 30;
+            if (examen == 1) {
+              var prijsExamen = 250;
+              if (lessen == 30) {
+                var prijsLessen = 1350;
+                var theoriePlusExamen = prijsExamen + prijsTheorie;
+                var totaal = prijsLessen + theoriePlusExamen;
+                document.getElementById("totaal").innerHTML ="Totaal: &euro;" + totaal + ",-";
+              }
+            }
+          }
+        }
+
+      }
+    
+    </script>
+                
+    
+       
+   
+</body>
+</html>
