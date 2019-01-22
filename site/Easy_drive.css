@@ -1,6 +1,8 @@
+/*De font family van elke pagina*/
 body{
 	font-family: Verdana;
 }
+/*De buttons in de navigatie balk*/
 .button{
 	background-color: #f7f7f7;
 	width: 20px;
@@ -13,12 +15,15 @@ body{
 	transition-duration: 0.5s;
 	color: black;
 }
+/*De buttons van de nav balk als je er over heen gaat*/
 .button:hover{
 	background-color: #3983f9;
 }
+/*De buttons van de nav balk als je er op klikt*/
 .button:active{
 	background-color: #1350b2;
 }
+/*De lijst waar de nav balk in staat*/
 .ulboven {
     display: inline;
     display: flex;
@@ -27,15 +32,16 @@ body{
     margin-right: 39px;
     color: black;
 }
+/*De css style van elke li*/
 li {
 	display: inline;
 	font-family: Verdana;
 	text-decoration: none;
 }
+/*De css style van elke a*/
 a {
 	text-decoration: none;
 	
-
 }
 .div_top{
 	height: 200px;
@@ -62,31 +68,32 @@ a {
 	left: 500px;
 	font-size: 30px;
 }
-.medewerker_foto1{
-	position: relative;
-	top: 70px;
-	left: 25px;
-}
-.medewerker_foto2{
-	position: relative;
-	top: 70px;
-	left: 25px;
-}
-.medewerker_foto3{
-	position: relative;
-	top: 70px;
-	left: 25px;
-}
-.medewerker_foto4{
-	position: relative;
-	top: 70px;
-	left: 25px;
-}
-.medewerker_foto5{
-	position: relative;
-	top: 70px;
-	left: 25px;
-}
+/*classes van de medewerker foto's op de home pagina*/
+	.medewerker_foto1{
+		position: relative;
+		top: 70px;
+		left: 25px;
+	}
+	.medewerker_foto2{
+		position: relative;
+		top: 70px;
+		left: 25px;
+	}
+	.medewerker_foto3{
+		position: relative;
+		top: 70px;
+		left: 25px;
+	}
+	.medewerker_foto4{
+		position: relative;
+		top: 70px;
+		left: 25px;
+	}
+	.medewerker_foto5{
+		position: relative;
+		top: 70px;
+		left: 25px;
+	}
 .table_main2{
 	width: 1300px;
 	height: 400px;
@@ -100,26 +107,27 @@ a {
 	font-size: 30px;
 	top: 10px;
 }
-.voertuigen_foto1{
-	position: relative;
-	top: 55px;
-	left: 40px;
-}
-.voertuigen_foto2{
-	position: relative;
-	top: 55px;
-	left: 65px;
-}
-.voertuigen_foto3{
-	position: relative;
-	top: 55px;
-	left: 90px;
-}
-.voertuigen_foto4{
-	position: relative;
-	top: 55px;
-	left: 105px;
-}
+/*alle classes van de foto's van de voertuigen op de home pagina*/
+	.voertuigen_foto1{
+		position: relative;
+		top: 55px;
+		left: 40px;
+	}
+	.voertuigen_foto2{
+		position: relative;
+		top: 55px;
+		left: 65px;
+	}
+	.voertuigen_foto3{
+		position: relative;
+		top: 55px;
+		left: 90px;
+	}
+	.voertuigen_foto4{
+		position: relative;
+		top: 55px;
+		left: 105px;
+	}
 #facebook_insta{
 	position: relative;
 	top: 250px;
@@ -134,4 +142,226 @@ a {
 	font-size: 20px;
 	width: 900px;
 }
+#foto{
+	position: relative;
+	left: 0px;
+	top: 25px;
+	width: 50px;
+	height: 50px;
+}
 
+  
+  * {
+	box-sizing: border-box;
+  }
+  
+  /* style the container */
+  .container {
+	
+	border-radius: 5px;
+	padding: 20px 0 30px 0;
+  } 
+	
+	/*Producten pagina*/
+	.basisPakketten{
+		margin-top: 200px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.containerBsisPktn{
+		position: relative;
+		width: 1200px;
+		height: 400px;
+		display: flex;
+		justify-content:space-between;
+		align-content: center;
+		align-items: center;
+		flex-direction: row;
+		padding: 3px;
+		border: black solid;
+	}
+
+	.samenStellen{
+		position: relative;
+		display: flex;
+		justify-content: start;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.containerSamenStellen{
+		position: relative;
+		width: 1200px;
+		height: 400px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 3px;
+		border: black solid;
+	}
+
+	#kortingen{
+		display: flex;
+		justify-content: end;
+		align-content: flex-end;
+		flex-direction: row-reverse;
+		align-items: stretch;
+	}
+
+	select{
+		width: 100px;
+		height: 20px;
+	}
+
+	#totaal{
+		text-align: right;
+		margin-right: 30px;
+	}
+
+	#bestelBtn{
+		display: flex;
+		justify-content: center;
+		align-content: flex-end;
+		flex-direction: row-reverse;
+		align-items: flex-end;
+		margin-left: 90%;
+		width: 80px;
+		height: 50px;
+	}
+	/*de table van de vacatures pagina*/
+.table_vacatures{
+	display: flex;
+	border: 2px solid black;
+	position: relative;
+	left: 475px;
+	width: 835px;
+	height: 363px;
+}
+/*alle verschillende id's van de vacatures*/
+	#vacature1{
+		flex-direction: row;
+		justify-content: center;
+		border: 1px solid black;
+		position: absolute;
+		text-align: left;
+		width: 200px;
+		height: 353px;
+	}
+	#vacature2{
+		border: 1px solid black;
+		position: absolute;
+		left: 211px;
+		text-align: left;
+		width: 200px;
+		height: 353px;
+	}
+	#vacature3{
+		border: 1px solid black;
+		position: absolute;
+		left: 418px;
+		text-align: left;
+		width: 200px;
+		height: 353px;
+	}
+	#vacature4{
+		border: 1px solid black;
+		position: absolute;
+		left: 628px;
+		text-align: left;
+		width: 200px;
+		height: 353px;
+	}
+	/* veranderd het lettertype groote van de h2 in de vacatures*/
+.hvacatures{
+		font-size: 21px;
+}
+/*p voor onder de table van vacatures*/
+#pvacatures{
+	position: absolute;
+	left: 23.5%;
+}
+.table_main_Overons{
+	border: 1px solid black;
+	width: 1300px;
+	position: relative;
+	margin-left: 220px;
+	height: 500px;
+}
+#Over_onsHenk{
+	width: 270px;
+	height: 245px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#Over_onsMahmud{
+	width: 270px;
+	height: 245px;
+	position: absolute;
+	top: 10px;
+	left: 290px;
+}
+.container-img {
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: 20px;
+width: 250px;
+height: 250px;
+}
+
+#container-medewerkers {
+margin-top: 200px;
+display: flex;
+justify-content: center;
+align-content: flex-end;	
+flex-direction: column;
+}
+
+.div-medewerkers{
+border: 2px solid;
+display: flex;
+justify-content: space-between;
+align-content: flex-end;	
+align-items: center;
+width: 800px;
+
+}
+.container2 {
+position: relative;
+border-radius: 5px;
+padding: 20px 0 30px 0;
+left: 27%;
+top: 90px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #3983f9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3983f9;
+}
+.div_contact_main{
+	position: absolute;
+	top: 200px;
+	left: 500px;
+}

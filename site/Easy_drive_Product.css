@@ -11,6 +11,7 @@ body{
 	padding: 15px 28px;
 	border-radius: 6px;
 	transition-duration: 0.5s;
+	color: black;
 }
 .button:hover{
 	background-color: #3983f9;
@@ -24,6 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-right: 39px;
+    color: black;
 }
 li {
 	display: inline;
@@ -32,7 +34,6 @@ li {
 }
 a {
 	text-decoration: none;
-	color: black;
 
 }
 .div_top{
@@ -44,7 +45,7 @@ a {
 }
 	.div_nav_bar{
 		position: relative;
-		right: 42px;
+		right: 17px;
 		top: 25px;
 	}
 .table_main{
